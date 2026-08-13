@@ -30,7 +30,7 @@ against a `json-server` mock API; now backed by a real Spring Boot service.
 
 ## Getting started
 
-**Prerequisites:** Node.js, and the [codebook-backend](https://github.com/<your-username>/codebook-backend)
+**Prerequisites:** Node.js, and the [codebook-backend](https://github.com/shyam050/codebook-backend)
 service running (see that repo's README) — or any API that implements the
 same contract.
 
@@ -50,11 +50,11 @@ npm test        # run tests
 
 ## Environment variables
 
-| Variable                     | Purpose                                   |
-|-------------------------------|--------------------------------------------|
-| `REACT_APP_HOST`              | Base URL of the backend API                |
-| `REACT_APP_GUEST_LOGIN`       | Email used by the "Login As Guest" button  |
-| `REACT_APP_GUEST_PASSWORD`    | Password used by the "Login As Guest" button |
+| Variable                   | Purpose                                      |
+| -------------------------- | -------------------------------------------- |
+| `REACT_APP_HOST`           | Base URL of the backend API                  |
+| `REACT_APP_GUEST_LOGIN`    | Email used by the "Login As Guest" button    |
+| `REACT_APP_GUEST_PASSWORD` | Password used by the "Login As Guest" button |
 
 ## Deploying for free
 
