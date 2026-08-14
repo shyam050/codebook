@@ -10,9 +10,9 @@ export async function getUser(){
         method: "GET",
         headers: {"Content-Type": "application/json", Authorization: `Bearer ${browserData.token}`}
     }
-    const response = await fetch(`${process.env.REACT_APP_HOST}/600/users/${browserData.cbid}`, requestOptions);
+    const response = await fetch(`${process.env.REACT_APP_HOST}/users/${browserData.cbid}`, requestOptions);
     if(!response.ok){
-        throw { message: response.statusText, status: response.status }; //eslint-disable-line
+        throw { message: response.statusText, status: response.status }; 
     }
     const data = await response.json();
     return data;
@@ -24,9 +24,9 @@ export async function getUserOrders(){
         method: "GET",
         headers: {"Content-Type": "application/json", Authorization: `Bearer ${browserData.token}`}
     }
-    const response = await fetch(`${process.env.REACT_APP_HOST}/660/orders?user.id=${browserData.cbid}`, requestOptions);
+    const response = await fetch(`${process.env.REACT_APP_HOST}/orders?user.id=${browserData.cbid}`, requestOptions);
     if(!response.ok){
-        throw { message: response.statusText, status: response.status }; //eslint-disable-line
+        throw { message: response.statusText, status: response.status }; 
     }
     const data = await response.json();
     return data;
@@ -49,9 +49,9 @@ export async function createOrder(cartList, total, user){
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${browserData.token}` },
         body: JSON.stringify(order)
     }
-    const response = await fetch(`${process.env.REACT_APP_HOST}/660/orders`, requestOptions);
+    const response = await fetch(`${process.env.REACT_APP_HOST}/orders`, requestOptions);
     if(!response.ok){
-        throw { message: response.statusText, status: response.status }; //eslint-disable-line
+        throw { message: response.statusText, status: response.status }; 
     }
     const data = await response.json();
     return data;
