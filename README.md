@@ -2,22 +2,26 @@
 
 A modern online course marketplace built with React and Spring Boot. Browse courses, add to cart, and checkout with JWT-secured authentication. Features dark mode, responsive design, and guest login.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://codebookdev.vercel.app)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
 
-## 🚀 Live Demo
+## Live Demo
 
 **[https://codebookdev.vercel.app](https://codebookdev.vercel.app)**
 
-## 📸 Screenshots
 
-| Home Page                         | Product Detail                          | Cart                              | Dark Mode                         |
-| --------------------------------- | --------------------------------------- | --------------------------------- | --------------------------------- |
-| ![Home](public/docs/home.png) | ![Product](docs/screenshot-product.png) | ![Cart](docs/screenshot-cart.png) | ![Dark](docs/screenshot-dark.png) |
+## Screenshots
 
-## 🛠️ Tech Stack
+<div>
+  <p><strong>Home Page</strong></p>
+  <img src="public/docs/home.png" alt="Home Page" width="600"/> 
+
+  <p><strong>Product Detail</strong></p>
+  <img src="public/docs/products.png" alt="Product Detail" width="600"/> 
+
+  <p><strong>Cart</strong></p>
+  <img src="public/docs/cart.png" alt="Cart" width="600"/> 
+</div>
+
+## Tech Stack
 
 - **React 18** with functional components and hooks
 - **React Router v6** for client-side routing
@@ -26,7 +30,7 @@ A modern online course marketplace built with React and Spring Boot. Browse cour
 - **react-toastify** for notifications
 - **Vercel** for deployment
 
-## 🏗️ Component Architecture
+## Component Architecture
 
 ```
 App
@@ -44,7 +48,7 @@ App
     └── FilterContext
 ```
 
-## ✨ Features
+## Features
 
 - **Product Catalog:** Browse all courses with search and category filters
 - **Featured Section:** Curated courses on homepage
@@ -55,7 +59,7 @@ App
 - **Responsive Design:** Works on desktop, tablet, and mobile
 - **Toast Notifications:** Success/error feedback for user actions
 
-## 🧠 Why Context API over Redux?
+## Why Context API over Redux?
 
 For this application's scale (3 global states: auth, cart, filters), Context API with `useReducer` provides:
 
@@ -63,7 +67,7 @@ For this application's scale (3 global states: auth, cart, filters), Context API
 - **Built-in** — No additional dependencies
 - **Sufficient performance** — No complex state interactions requiring Redux middleware
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -97,36 +101,14 @@ App opens at `http://localhost:3000`
 npm run build
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 npm test
 ```
 
-## 📊 Performance (Lighthouse)
-
-| Metric             | Score |
-| ------------------ | ----- |
-| **Performance**    | 92    |
-| **Accessibility**  | 100   |
-| **Best Practices** | 95    |
-| **SEO**            | 90    |
-
-![Lighthouse Score](docs/lighthouse.png)
-
-## 📱 Responsive Design
-
-Fully responsive across all screen sizes:
-
-- **Desktop:** 1200px+
-- **Tablet:** 768px - 1199px
-- **Mobile:** < 768px
-
-## 🔗 Related
+## Related
 
 - **Backend API:** [github.com/shyam050/codebook-backend](https://github.com/shyam050/codebook-backend)
 - **API Documentation:** Swagger UI at `/swagger-ui.html` on backend
 
-## 📄 License
-
-MIT
