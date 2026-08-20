@@ -4,7 +4,7 @@ An online course marketplace built with React — browse courses, add them to
 a cart, check out, and view past orders from a dashboard. Originally built
 against a `json-server` mock API; now backed by a real Spring Boot service.
 
-**Backend repo:** [codebook-backend](https://github.com/<your-username>/codebook-backend)
+**Backend repo:** [codebook-backend](https://github.com/shyam050/codebook-backend)
 
 ## Tech stack
 
