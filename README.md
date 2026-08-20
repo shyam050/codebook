@@ -49,23 +49,8 @@ npm test        # run tests
 
 ## Environment variables
 
-| Variable                     | Purpose                                   |
-|-------------------------------|--------------------------------------------|
-| `REACT_APP_HOST`              | Base URL of the backend API                |
-| `REACT_APP_GUEST_LOGIN`       | Email used by the "Login As Guest" button  |
-| `REACT_APP_GUEST_PASSWORD`    | Password used by the "Login As Guest" button |
-
-## Deploying for free
-
-Vercel or Netlify both auto-detect this as a Create React App project with
-zero config. Connect the repo, set `REACT_APP_HOST` to your deployed
-backend's URL as an environment variable, and deploy. Once it's live, add
-this frontend's URL to the backend's `CORS_ORIGINS` setting (see the backend
-README), or every API call will be blocked by CORS.
-
-## Legacy: running against the json-server mock
-
-`json-server` and `json-server-auth` are still in `devDependencies` from
-before the real backend existed. Not needed anymore, but if you want to run
-the original mock instead: `data/db.json` and `data/routes.json` hold the
-fixture data and route rewrites it used.
+| Variable                   | Purpose                                      |
+| -------------------------- | -------------------------------------------- |
+| `REACT_APP_HOST`           | Base URL of the backend API                  |
+| `REACT_APP_GUEST_LOGIN`    | Email used by the "Login As Guest" button    |
+| `REACT_APP_GUEST_PASSWORD` | Password used by the "Login As Guest" button |
